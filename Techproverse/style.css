@@ -68,13 +68,15 @@ nav{
     margin: 0 auto;
     padding: 20px 25px;
 }
+.navigation .side{
+    display: none;
 .side{
     position: fixed;
     top: 0;
     right: 0;
     padding: 20px 25px;
     background-color: #EAEAEA;
-    display: none;
+    display: flex;
     flex-direction: column;
     width: 250px;
     height: 100vh;
