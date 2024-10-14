@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resident</title>
+    <script src="https://kit.fontawesome.com/f0d5f77088.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <nav>
+        <section class="container navigation">
+            <div class="logo"><a href="#top"><img src="Logo/lg.png" alt="LOGO"></a></div>
+            <div class="navi">
+                <ul class="primary">
+                    <li >Services</li>
+                    <a href="#about"><li> About us</li></a>
+                    <li> Contact</li>
+                </ul>
+                <div class="parent">
+                    <ul class="side">
+                        <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                        <li >Services</li>
+                        <a href="#about"><li> About us</li></a>
+                        <li> Contact</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="bar"  onclick= showSidebar()>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </section>
+    </nav>
+
+    <main>
+        <section class="container hero">
+            <div class="hero_text">
+                <h3>Find the right 
+                    Commercial 
+                    Space 
+                </h3>
+                <p>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad </p>
+                <h4>See more</h4>
+            </div>
+            <div class="hero_image animate__animated animate__fadeIn"><img src="images/Hero.jpg" alt=""></div>
+        </section>
+    </main>
+
+    <article>
+        <section class="container article_1">
+            <div class="article_image"><img src="images/lovepik-hefei-business-building-picture_501607957 1.jpg" alt=""></div>
+            <div class="second">
+                <div class="second_text">
+                    <h3>Property Review</h3>
+                    <p>Corem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                </div>
+                <div class="second_image">
+                    <img src="images/depositphotos_10085041-stock-photo-new-houses 1.jpg" alt="">
+                    <img src="images/pexels-binyaminmellish-186077 1.jpg" alt="">
+                </div>
+    
+             </div>
+        </section>
+    </article>
+
+    <div class="article_2">
+        <section class="container a_r">
+            <div class="a_2">
+                <h3>Safe <br>
+                    neighborhood
+                </h3>
+                <p>Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
+                    <br>
+                    Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                    
+                    
+                    </p>
+            </div>
+            <div class="a_2_image"><img src="images/pexels-binyaminmellish-186077 2.jpg" alt=""></div>
+        </section>
+    </div>
+
+    <aside id="about">
+        <section class="container about">
+            <div class="sec_1">
+                <h3>About Us</h3>
+                <div class="sec_1_image"><img src="images/ab-small.jpg"></div>
+            </div>
+            <div class="sec_2">
+                <img src="images/stats.jpg">
+            </div>
+            <div class="sec_3">
+                <img src="images/ab-big.jpg">
+            </div>
+        </section>
+    </aside>
+
+    <div class="end">
+        <div class="black_box">
+            <div class="white_text">
+                <h3>Why Choose Us?</h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident doloremque minus earum odio sed eaque illum ad aliquam explicabo? Magnam voluptas </p>
+                <h4>See more</h4> 
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="grid_content">
+           <img src="dark-images/1st.jpg">
+        </div>
+        <div class="grid_content">
+           <img src="dark-images/2nd.jpg">
+        </div>
+        <div class="grid_content">
+           <img src="dark-images/3rd.jpg">
+        </div>
+   </div>
+
+   <footer>
+       <div class="foot_logo"><img src="Logo/lg_white.png"></div>
+       <p>Corem ipsum dolor sit amet, consectetur adipiscing elit.  Nunc vulputate libero et velit interdum, ac aliquet odio<br> mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra<br>, per inceptos himenaeos.</p>
+       <div class="icons"></div>
+   </footer>
+
+
+    <script>
+        function showSidebar(){
+            const parent = document.querySelector (".parent")
+            const sidebar = document.querySelector (".side")
+
+            parent.classList.add('active');
+            sidebar.classList.add('active');
+        }
+        function hideSidebar() {
+            const parent = document.querySelector('.parent');
+            const sidebar = document.querySelector('.side');
+
+            sidebar.classList.remove('active'); 
+            setTimeout(() => {
+             parent.classList.remove('active'); 
+               }, 500); 
+}
+    </script>
+</body>
+</html>
