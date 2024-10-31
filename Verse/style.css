@@ -1,0 +1,593 @@
+@font-face{
+    font-family: Bowlby one;
+    src: url(Heavitas.ttf)
+}
+@font-face{
+    font-family: Manrope;
+    src: url(manrope-regular.otf)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/*General*/
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+html{
+    font-size: 83.6%;
+}
+.container{
+    max-width: 1580px;
+    margin: 0 auto;
+    padding: 15px;
+}
+/*Nav*/
+
+nav{
+    background-color: #212121;
+    position: sticky;
+    top: 0;
+    z-index: 4000;
+    
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    font-family: Manrope;
+    font-size: 1.2rem;
+}
+.left , .icons ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: #F0F0F0;
+}
+.icons li:hover{
+    color: #a0a0a0;
+}
+.right{
+    color: #33CCCC;
+    border: 2px solid #33CCCC;
+    border-radius: 33px;
+    padding: 15px 25px;
+    cursor: pointer;
+
+    &:hover{
+            background-color: #33CCCC;
+            color: #F0F0F0;
+    }
+}
+.toggle_btn{
+    color: #F0F0F0;
+    font-size: 1.6rem;
+    display: none;
+    padding-right: 3%;
+    cursor: pointer;
+}
+/*Hero*/
+
+header{
+    background: url(images/Bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    color: #F0F0F0;
+    
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.hero h1{
+    margin-top: 15%;
+    font-family: Bowlby one;
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+.highlight {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+  }
+  
+  .highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 15px; 
+    background-color: #33CCCC;
+    z-index: -1; 
+  }
+  .btn{
+    font-family: manrope;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #33CCCC;
+    width: 115px;
+    padding: 10px 25px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: box-shadow .2s ease-in-out;
+
+        &:hover{
+            box-shadow: 0px 0px 10px #33CCCC;
+        }
+  }
+/*Sevices*/
+.Services h1{
+    margin-top: 2%;
+    font-size: 3.5rem;
+    font-family: Bowlby one;
+    font-weight: 400;
+    text-align: center;
+}
+#serv{
+    scroll-margin-top: 120px;
+}
+.works{
+    margin-top: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5%;
+}
+.content{
+    width: 220px;
+    text-align: center;
+    font-family: manrope;
+}
+.content h3{
+    font-size: 1.1rem;
+}
+.content p{
+    margin-top: 10%;
+    font-size: 1rem;
+}
+.gif img{
+    width: 180px;
+}
+/*article*/
+
+article{
+    background-color: #010101;
+    padding: 5%;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.intro_vid{
+    width: 35%;
+}
+.information{
+    color: #F0F0F0;
+    width: 40%;
+    text-align: right;
+}
+.information h1{
+    font-size: 3.5rem;
+    font-family: Bowlby one;
+    font-weight: 400;
+    margin-bottom: 10%;
+}
+.information p{
+    font-family: manrope;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+/*more*/
+.more{
+    font-family: manrope;
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+#business{
+    width: 40%;
+}
+.connect{
+    display: flex;
+    align-items: center;
+    background-color: #33CCCC;
+    text-align: center;
+    height: 50px;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 28px;
+    color: #F0F0F0;
+    box-shadow: 2px 4px 10px #646464;
+    transition: transform .2s ease-in-out;
+    &:hover{
+        transform: scale(1.1);
+        transition: transform .2s ease-in-out;
+    }
+}
+/*footer*/
+footer{
+    background: url(images/footer.png) no-repeat center ;
+    background-size: cover;   
+}
+.footer_logo img{
+    width: 250px;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.query{
+    color: #F0F0F0;
+    font-family: manrope;
+    text-align: right;
+    font-size: 1.5rem;
+    display: grid;
+    gap: 35px;
+}
+.social{
+    display: flex;
+    place-self: flex-end;
+    gap: 25px;
+    
+}
+
+/*team_html*/
+
+.welcome{
+    font-family: manrope;
+    font-size: 1.3rem;
+    line-height: 3rem;
+    width: 50%;
+}
+.our_team{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+    place-items: center;
+    gap: 35px;
+    
+}
+.profile img{
+    width: 250px;
+}
+.stat{
+    font-family: manrope;
+    text-align: center;
+  
+}
+.stat p{
+    margin: 10px;
+}
+
+.stat a{
+   
+   background-color: #33CCCC;
+   padding: 5px 15px;
+   border-radius: 20px;
+   color: #F0F0F0;
+   transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s ease, color 0.3s;
+   
+
+   &:hover{
+    background-color: transparent;
+    border: 1px solid #33CCCC;
+    border-radius: 20px;
+    color: #212121;
+    transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s ease, color 0.3s;
+    
+   }
+}
+.team_head{
+    text-align: center;
+    font-family: Bowlby one;
+    font-size: 3.5rem;
+    margin-bottom: 8%;
+}
+.space{
+    padding: 10% 0;
+}
+/*contact.html*/
+
+#help{
+    font-family: manrope;
+    font-size: 1.5rem;
+}
+.conn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 8%;
+}
+.connect_info{
+    font-family: manrope;
+    font-size: 2rem;
+    line-height: 65px;
+    
+}
+.connect_img img{
+    width: 600px;
+}
+.slack:hover{
+    color: #33CCCC;
+}
+
+/*dropdown*/
+
+
+.dropdown{
+    
+    
+    position: absolute;
+    right: -50.5rem;
+    top: 80px;
+    width: 300px;
+    background-color: #21212180;
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    border-radius: 10px;
+    transition: right .4s ease-in-out;
+}
+.dropdown.open{
+    right: 2.5rem;
+}
+.dropdown li{
+    margin: 5% 0;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+/*Responsive design*/
+@media(max-width:463px){
+    .connect_info{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .connect_img img{
+        width: 100%;
+    }
+    .welcome{
+        margin-top: -65px;
+        width: 90%;
+    }
+    
+    footer{
+          margin-top: 5%;
+    }
+    .footer_logo img{
+        width: 180px;
+    }
+    .foot{
+        flex-direction: column;
+    }
+    .query{
+        text-align: center;
+    }
+    .social{
+        place-self: center;
+    }
+    
+    .more{
+        margin-top: 40px;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    #business{
+        width: 80%;
+        font-weight: 550;
+    }
+    
+    header{
+        height: 60vh;
+    }
+    .info{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .information{
+        order: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .information p{
+        line-height: 2.5rem;
+    }
+    .intro_vid{
+        order: 1;
+        width: 100%;
+    }
+    .hero h1{
+        margin-top: 30%;
+    }
+    .works{
+        gap: 50px;
+    }
+    .logo img{
+        width: 100px;
+    }
+    html{
+        font-size: 60%;
+    }
+    .content h3{
+        font-size: 1.5rem;
+    }
+    .content p{
+        font-size: 1.1rem;
+    }
+    .icons , .right{
+        display: none;
+    }
+    .toggle_btn{
+        display: block;
+    }
+}
+@media(min-width:463px) and (max-width:580px){
+    .connect_info{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .connect_img img{
+        width: 100%;
+    }
+    .welcome{
+        margin-top: -65px;
+        width: 100%;
+    }
+    footer{
+        margin-top: 5%;
+  }
+  .footer_logo img{
+      width: 200px;
+  }
+  .foot{
+      flex-direction: column;
+  }
+  .query{
+      text-align: center;
+  }
+  .social{
+      place-self: center;
+  }
+    .more{
+        margin-top: 40px;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    #business{
+        width: 80%;
+        font-weight: 550;
+    }
+    header{
+        height: 70vh;
+    }
+    .info{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .information{
+        order: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .information p{
+        line-height: 2.5rem;
+    }
+    .intro_vid{
+        order: 1;
+        width: 100%;
+    }
+    .hero h1{
+        margin-top: 30%;
+    }
+    .works{
+        gap: 50px;
+    }
+    .logo img{
+        width: 100px;
+    }
+    html{
+        font-size: 75%;
+    }
+    .icons , .right{
+        display: none;
+    }
+    .toggle_btn{
+        display: block;
+    }
+
+}
+@media(min-width: 580px) and (max-width : 900px){
+    .connect_info{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .connect_img img{
+        width: 100%;
+    }
+    .welcome{
+        margin-top: -45px;
+        width: 90%;
+    }
+    footer{
+        margin-top: 5%;
+  }
+  .footer_logo img{
+      width: 250px;
+  }
+  .foot{
+      flex-direction: column;
+  }
+  .query{
+      text-align: center;
+  }
+  .social{
+      place-self: center;
+  }
+    .more{
+        margin-top: 40px;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    #business{
+        width: 80%;
+    }
+    header{
+        height: 650px;
+    }
+    .info{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .information{
+        order: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .information p{
+        line-height: 2.5rem;
+    }
+    .intro_vid{
+        order: 1;
+        width: 100%;
+    }
+    .hero h1{
+        margin-top: 20%;
+    }
+    .logo img{
+        width: 120px;
+    }
+    html{
+        font-size: 80%;
+    }
+    .icons , .right{
+        display: none;
+    }
+    .toggle_btn{
+        display: block;
+    }
+}
